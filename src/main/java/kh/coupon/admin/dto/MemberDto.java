@@ -24,11 +24,13 @@ public class MemberDto {
 	private String member_id;
 	private String member_password;
 	private String member_profile;
-	private String member_phone;
+	@Column(name="member_phone")
+	private String memberPhone;
 	private Date member_date_create;
 	private Date member_date_update;
 	private String member_nickname;
-	private String member_class;
+	@Column(name="member_class")
+	private String memberClass;
 	private String member_email;
 	private String member_role;
 	private String member_withdraw;

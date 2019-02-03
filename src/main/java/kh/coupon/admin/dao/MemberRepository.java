@@ -9,4 +9,7 @@ import kh.coupon.admin.dto.MemberDto;
 public interface MemberRepository extends JpaRepository<MemberDto, Integer>{
 
 	List<MemberDto> findAllByMemberNameContaining(String name);
+	List<MemberDto> findAllByMemberClassContaining(String className);
+	List<MemberDto> findAllByMemberPhoneContaining(String phone);
+	
 }
